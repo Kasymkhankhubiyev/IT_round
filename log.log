@@ -3003,3 +3003,102 @@ INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[
 INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:23:53 MSK)" executed successfully
 INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:24:53 MSK)" (scheduled at 2025-07-13 15:23:53.508031+03:00)
 INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:24:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:25:53 MSK)" (scheduled at 2025-07-13 15:24:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:25:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:26:53 MSK)" (scheduled at 2025-07-13 15:25:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:26:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:27:53 MSK)" (scheduled at 2025-07-13 15:26:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:27:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:28:53 MSK)" (scheduled at 2025-07-13 15:27:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:28:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:29:53 MSK)" (scheduled at 2025-07-13 15:28:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:29:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:30:53 MSK)" (scheduled at 2025-07-13 15:29:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:30:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:31:53 MSK)" (scheduled at 2025-07-13 15:30:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:31:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:32:53 MSK)" (scheduled at 2025-07-13 15:31:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:32:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:33:53 MSK)" (scheduled at 2025-07-13 15:32:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:33:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:34:53 MSK)" (scheduled at 2025-07-13 15:33:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:34:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:35:53 MSK)" (scheduled at 2025-07-13 15:34:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:35:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:36:53 MSK)" (scheduled at 2025-07-13 15:35:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:36:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:37:53 MSK)" (scheduled at 2025-07-13 15:36:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:37:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:38:53 MSK)" (scheduled at 2025-07-13 15:37:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:38:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:39:53 MSK)" (scheduled at 2025-07-13 15:38:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:39:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:40:53 MSK)" (scheduled at 2025-07-13 15:39:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:40:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:41:53 MSK)" (scheduled at 2025-07-13 15:40:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:41:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:42:53 MSK)" (scheduled at 2025-07-13 15:41:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:42:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:43:53 MSK)" (scheduled at 2025-07-13 15:42:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:43:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:44:53 MSK)" (scheduled at 2025-07-13 15:43:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:44:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:45:53 MSK)" (scheduled at 2025-07-13 15:44:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:45:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:46:53 MSK)" (scheduled at 2025-07-13 15:45:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:46:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:47:53 MSK)" (scheduled at 2025-07-13 15:46:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:47:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:48:53 MSK)" (scheduled at 2025-07-13 15:47:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:48:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:49:53 MSK)" (scheduled at 2025-07-13 15:48:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:49:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:50:53 MSK)" (scheduled at 2025-07-13 15:49:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:50:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:51:53 MSK)" (scheduled at 2025-07-13 15:50:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:51:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:52:53 MSK)" (scheduled at 2025-07-13 15:51:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:52:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:53:53 MSK)" (scheduled at 2025-07-13 15:52:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:53:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:54:53 MSK)" (scheduled at 2025-07-13 15:53:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:54:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:55:53 MSK)" (scheduled at 2025-07-13 15:54:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:55:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:56:53 MSK)" (scheduled at 2025-07-13 15:55:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:56:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:57:53 MSK)" (scheduled at 2025-07-13 15:56:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:57:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:58:53 MSK)" (scheduled at 2025-07-13 15:57:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:58:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:59:53 MSK)" (scheduled at 2025-07-13 15:58:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:59:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 16:00:53 MSK)" (scheduled at 2025-07-13 15:59:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 16:00:53 MSK)" executed successfully
+INFO:aiogram.event:Update id=607674448 is not handled. Duration 5 ms by bot id=7628846836
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 16:01:53 MSK)" (scheduled at 2025-07-13 16:00:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 16:01:53 MSK)" executed successfully
+INFO:aiogram.event:Update id=607674449 is handled. Duration 534 ms by bot id=7628846836
+INFO:aiogram.event:Update id=607674450 is handled. Duration 132 ms by bot id=7628846836
+INFO:aiogram.event:Update id=607674451 is handled. Duration 108 ms by bot id=7628846836
+INFO:aiogram.event:Update id=607674452 is handled. Duration 280 ms by bot id=7628846836
+INFO:aiogram.event:Update id=607674453 is handled. Duration 128 ms by bot id=7628846836
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 16:02:53 MSK)" (scheduled at 2025-07-13 16:01:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 16:02:53 MSK)" executed successfully
+INFO:aiogram.event:Update id=607674454 is handled. Duration 114 ms by bot id=7628846836
+INFO:aiogram.event:Update id=607674455 is handled. Duration 521 ms by bot id=7628846836
+INFO:aiogram.event:Update id=607674456 is handled. Duration 199 ms by bot id=7628846836
+INFO:aiogram.event:Update id=607674457 is handled. Duration 125 ms by bot id=7628846836
+INFO:aiogram.event:Update id=607674458 is handled. Duration 106 ms by bot id=7628846836
+INFO:aiogram.event:Update id=607674459 is handled. Duration 122 ms by bot id=7628846836
+INFO:aiogram.event:Update id=607674460 is handled. Duration 189 ms by bot id=7628846836
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 16:03:53 MSK)" (scheduled at 2025-07-13 16:02:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 16:03:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 16:04:53 MSK)" (scheduled at 2025-07-13 16:03:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 16:04:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 16:05:53 MSK)" (scheduled at 2025-07-13 16:04:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 16:05:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 16:06:53 MSK)" (scheduled at 2025-07-13 16:05:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 16:06:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 16:07:53 MSK)" (scheduled at 2025-07-13 16:06:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 16:07:53 MSK)" executed successfully
