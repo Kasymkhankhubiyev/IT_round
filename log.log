@@ -2472,3 +2472,534 @@ INFO:aiogram.dispatcher:Start polling
 INFO:aiogram.dispatcher:Run polling for bot @mariam_chat_bot id=7628846836 - 'mariam_chat_bot'
 INFO:aiogram.event:Update id=607674393 is handled. Duration 843 ms by bot id=7628846836
 INFO:aiogram.event:Update id=607674394 is handled. Duration 123 ms by bot id=7628846836
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+WARNING:aiogram.dispatcher:Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7628846836)
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Network is unreachable]
+WARNING:aiogram.dispatcher:Sleep for 1.303237 seconds and try again... (tryings = 1, bot id = 7628846836)
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+WARNING:aiogram.dispatcher:Sleep for 1.429260 seconds and try again... (tryings = 2, bot id = 7628846836)
+INFO:aiogram.dispatcher:Connection established (tryings = 3, bot id = 7628846836)
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @mariam_chat_bot id=7628846836 - 'mariam_chat_bot'
+INFO:aiogram.dispatcher:Polling stopped
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "check_events" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @mariam_chat_bot id=7628846836 - 'mariam_chat_bot'
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-12 18:05:43 MSK)" (scheduled at 2025-07-12 18:04:43.259252+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-12 18:05:43 MSK)" executed successfully
+INFO:aiogram.event:Update id=607674395 is handled. Duration 343 ms by bot id=7628846836
+INFO:aiogram.event:Update id=607674396 is handled. Duration 124 ms by bot id=7628846836
+INFO:aiogram.event:Update id=607674397 is not handled. Duration 99 ms by bot id=7628846836
+ERROR:aiogram.event:Cause exception while process update id=607674397 by bot id=7628846836
+TypeError: global_error_handler() missing 1 required positional argument: 'error'
+Traceback (most recent call last):
+  File "/Users/hubievkasym/Desktop/Python Projects/IT_round/.venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hubievkasym/Desktop/Python Projects/IT_round/.venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hubievkasym/Desktop/Python Projects/IT_round/.venv/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hubievkasym/Desktop/Python Projects/IT_round/.venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hubievkasym/Desktop/Python Projects/IT_round/.venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/hubievkasym/Desktop/Python Projects/IT_round/.venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hubievkasym/Desktop/Python Projects/IT_round/.venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hubievkasym/Desktop/Python Projects/IT_round/.venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hubievkasym/Desktop/Python Projects/IT_round/.venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hubievkasym/Desktop/Python Projects/IT_round/.venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hubievkasym/Desktop/Python Projects/IT_round/.venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/hubievkasym/Desktop/Python Projects/IT_round/app/telebot.py", line 119, in show_schedule
+    await message.reply(response)
+  File "/Users/hubievkasym/Desktop/Python Projects/IT_round/.venv/lib/python3.12/site-packages/aiogram/methods/base.py", line 84, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "/Users/hubievkasym/Desktop/Python Projects/IT_round/.venv/lib/python3.12/site-packages/aiogram/client/bot.py", line 482, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hubievkasym/Desktop/Python Projects/IT_round/.venv/lib/python3.12/site-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hubievkasym/Desktop/Python Projects/IT_round/.venv/lib/python3.12/site-packages/aiogram/client/session/aiohttp.py", line 185, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hubievkasym/Desktop/Python Projects/IT_round/.venv/lib/python3.12/site-packages/aiogram/client/session/base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: message text is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/hubievkasym/Desktop/Python Projects/IT_round/.venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hubievkasym/Desktop/Python Projects/IT_round/.venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hubievkasym/Desktop/Python Projects/IT_round/.venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 29, in __call__
+    response = await self.router.propagate_event(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hubievkasym/Desktop/Python Projects/IT_round/.venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hubievkasym/Desktop/Python Projects/IT_round/.venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hubievkasym/Desktop/Python Projects/IT_round/.venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hubievkasym/Desktop/Python Projects/IT_round/.venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hubievkasym/Desktop/Python Projects/IT_round/.venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+                 ^^^^^^^^^
+TypeError: global_error_handler() missing 1 required positional argument: 'error'
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-12 18:06:43 MSK)" (scheduled at 2025-07-12 18:05:43.259252+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-12 18:06:43 MSK)" executed successfully
+INFO:aiogram.event:Update id=607674398 is handled. Duration 126 ms by bot id=7628846836
+INFO:aiogram.event:Update id=607674399 is not handled. Duration 95 ms by bot id=7628846836
+ERROR:aiogram.event:Cause exception while process update id=607674399 by bot id=7628846836
+TypeError: global_error_handler() missing 1 required positional argument: 'error'
+Traceback (most recent call last):
+  File "/Users/hubievkasym/Desktop/Python Projects/IT_round/.venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hubievkasym/Desktop/Python Projects/IT_round/.venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hubievkasym/Desktop/Python Projects/IT_round/.venv/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hubievkasym/Desktop/Python Projects/IT_round/.venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hubievkasym/Desktop/Python Projects/IT_round/.venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/hubievkasym/Desktop/Python Projects/IT_round/.venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hubievkasym/Desktop/Python Projects/IT_round/.venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hubievkasym/Desktop/Python Projects/IT_round/.venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hubievkasym/Desktop/Python Projects/IT_round/.venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hubievkasym/Desktop/Python Projects/IT_round/.venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hubievkasym/Desktop/Python Projects/IT_round/.venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/hubievkasym/Desktop/Python Projects/IT_round/app/telebot.py", line 119, in show_schedule
+    await message.reply(response)
+  File "/Users/hubievkasym/Desktop/Python Projects/IT_round/.venv/lib/python3.12/site-packages/aiogram/methods/base.py", line 84, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "/Users/hubievkasym/Desktop/Python Projects/IT_round/.venv/lib/python3.12/site-packages/aiogram/client/bot.py", line 482, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hubievkasym/Desktop/Python Projects/IT_round/.venv/lib/python3.12/site-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hubievkasym/Desktop/Python Projects/IT_round/.venv/lib/python3.12/site-packages/aiogram/client/session/aiohttp.py", line 185, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hubievkasym/Desktop/Python Projects/IT_round/.venv/lib/python3.12/site-packages/aiogram/client/session/base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: message text is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/hubievkasym/Desktop/Python Projects/IT_round/.venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hubievkasym/Desktop/Python Projects/IT_round/.venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hubievkasym/Desktop/Python Projects/IT_round/.venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 29, in __call__
+    response = await self.router.propagate_event(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hubievkasym/Desktop/Python Projects/IT_round/.venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hubievkasym/Desktop/Python Projects/IT_round/.venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hubievkasym/Desktop/Python Projects/IT_round/.venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hubievkasym/Desktop/Python Projects/IT_round/.venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hubievkasym/Desktop/Python Projects/IT_round/.venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+                 ^^^^^^^^^
+TypeError: global_error_handler() missing 1 required positional argument: 'error'
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-12 18:07:43 MSK)" (scheduled at 2025-07-12 18:06:43.259252+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-12 18:07:43 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-12 18:08:43 MSK)" (scheduled at 2025-07-12 18:07:43.259252+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-12 18:08:43 MSK)" executed successfully
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @mariam_chat_bot id=7628846836 - 'mariam_chat_bot'
+INFO:aiogram.dispatcher:Polling stopped
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "check_events" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @mariam_chat_bot id=7628846836 - 'mariam_chat_bot'
+INFO:aiogram.event:Update id=607674400 is handled. Duration 286 ms by bot id=7628846836
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-12 18:09:47 MSK)" (scheduled at 2025-07-12 18:08:47.078122+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-12 18:09:47 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-12 18:10:47 MSK)" (scheduled at 2025-07-12 18:09:47.078122+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-12 18:10:47 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-12 18:11:47 MSK)" (scheduled at 2025-07-12 18:10:47.078122+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-12 18:11:47 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-12 18:12:47 MSK)" (scheduled at 2025-07-12 18:11:47.078122+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-12 18:12:47 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-12 18:13:47 MSK)" (scheduled at 2025-07-12 18:12:47.078122+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-12 18:13:47 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-12 18:14:47 MSK)" (scheduled at 2025-07-12 18:13:47.078122+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-12 18:14:47 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-12 18:15:47 MSK)" (scheduled at 2025-07-12 18:14:47.078122+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-12 18:15:47 MSK)" executed successfully
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @mariam_chat_bot id=7628846836 - 'mariam_chat_bot'
+INFO:aiogram.dispatcher:Polling stopped
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "check_events" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @mariam_chat_bot id=7628846836 - 'mariam_chat_bot'
+INFO:aiogram.event:Update id=607674401 is handled. Duration 276 ms by bot id=7628846836
+INFO:aiogram.event:Update id=607674402 is handled. Duration 131 ms by bot id=7628846836
+INFO:aiogram.event:Update id=607674403 is handled. Duration 123 ms by bot id=7628846836
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-12 18:16:53 MSK)" (scheduled at 2025-07-12 18:15:53.592894+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-12 18:16:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-12 18:17:53 MSK)" (scheduled at 2025-07-12 18:16:53.592894+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-12 18:17:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-12 18:18:53 MSK)" (scheduled at 2025-07-12 18:17:53.592894+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-12 18:18:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-12 18:19:53 MSK)" (scheduled at 2025-07-12 18:18:53.592894+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-12 18:19:53 MSK)" executed successfully
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @mariam_chat_bot id=7628846836 - 'mariam_chat_bot'
+INFO:aiogram.dispatcher:Polling stopped
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "check_events" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @mariam_chat_bot id=7628846836 - 'mariam_chat_bot'
+INFO:aiogram.event:Update id=607674404 is handled. Duration 300 ms by bot id=7628846836
+INFO:aiogram.event:Update id=607674405 is handled. Duration 115 ms by bot id=7628846836
+INFO:aiogram.event:Update id=607674406 is handled. Duration 177 ms by bot id=7628846836
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-12 18:21:26 MSK)" (scheduled at 2025-07-12 18:20:26.901563+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-12 18:21:26 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-12 18:22:26 MSK)" (scheduled at 2025-07-12 18:21:26.901563+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-12 18:22:26 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-12 18:23:26 MSK)" (scheduled at 2025-07-12 18:22:26.901563+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-12 18:23:26 MSK)" executed successfully
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @mariam_chat_bot id=7628846836 - 'mariam_chat_bot'
+INFO:aiogram.dispatcher:Polling stopped
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "check_events" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @mariam_chat_bot id=7628846836 - 'mariam_chat_bot'
+INFO:aiogram.event:Update id=607674407 is handled. Duration 366 ms by bot id=7628846836
+INFO:aiogram.event:Update id=607674408 is handled. Duration 165 ms by bot id=7628846836
+INFO:aiogram.event:Update id=607674409 is handled. Duration 116 ms by bot id=7628846836
+INFO:aiogram.event:Update id=607674410 is handled. Duration 126 ms by bot id=7628846836
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-12 18:24:41 MSK)" (scheduled at 2025-07-12 18:23:41.087420+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-12 18:24:41 MSK)" executed successfully
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @mariam_chat_bot id=7628846836 - 'mariam_chat_bot'
+INFO:aiogram.dispatcher:Polling stopped
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "check_events" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "check_events" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "check_events" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "check_events" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "check_events" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "check_events" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "check_events" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+INFO:httpx:HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "check_events" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @mariam_chat_bot id=7628846836 - 'mariam_chat_bot'
+INFO:aiogram.event:Update id=607674412 is handled. Duration 271 ms by bot id=7628846836
+INFO:aiogram.event:Update id=607674411 is handled. Duration 299 ms by bot id=7628846836
+INFO:aiogram.event:Update id=607674413 is handled. Duration 290 ms by bot id=7628846836
+INFO:aiogram.event:Update id=607674415 is handled. Duration 300 ms by bot id=7628846836
+INFO:aiogram.event:Update id=607674414 is handled. Duration 330 ms by bot id=7628846836
+INFO:aiogram.event:Update id=607674416 is handled. Duration 341 ms by bot id=7628846836
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 12:57:49 MSK)" (scheduled at 2025-07-13 12:56:49.578496+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 12:57:49 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 12:58:49 MSK)" (scheduled at 2025-07-13 12:57:49.578496+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 12:58:49 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 12:59:49 MSK)" (scheduled at 2025-07-13 12:58:49.578496+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 12:59:49 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:00:49 MSK)" (scheduled at 2025-07-13 12:59:49.578496+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:00:49 MSK)" executed successfully
+INFO:aiogram.event:Update id=607674417 is handled. Duration 165 ms by bot id=7628846836
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:01:49 MSK)" (scheduled at 2025-07-13 13:00:49.578496+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:01:49 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:02:49 MSK)" (scheduled at 2025-07-13 13:01:49.578496+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:02:49 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:03:49 MSK)" (scheduled at 2025-07-13 13:02:49.578496+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:03:49 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:04:49 MSK)" (scheduled at 2025-07-13 13:03:49.578496+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:04:49 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:05:49 MSK)" (scheduled at 2025-07-13 13:04:49.578496+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:05:49 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:06:49 MSK)" (scheduled at 2025-07-13 13:05:49.578496+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:06:49 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:07:49 MSK)" (scheduled at 2025-07-13 13:06:49.578496+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:07:49 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:08:49 MSK)" (scheduled at 2025-07-13 13:07:49.578496+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:08:49 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:09:49 MSK)" (scheduled at 2025-07-13 13:08:49.578496+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:09:49 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:10:49 MSK)" (scheduled at 2025-07-13 13:09:49.578496+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:10:49 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:11:49 MSK)" (scheduled at 2025-07-13 13:10:49.578496+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:11:49 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:12:49 MSK)" (scheduled at 2025-07-13 13:11:49.578496+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:12:49 MSK)" executed successfully
+INFO:aiogram.event:Update id=607674418 is handled. Duration 107 ms by bot id=7628846836
+INFO:aiogram.event:Update id=607674419 is handled. Duration 153 ms by bot id=7628846836
+INFO:aiogram.event:Update id=607674420 is handled. Duration 182 ms by bot id=7628846836
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:13:49 MSK)" (scheduled at 2025-07-13 13:12:49.578496+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:13:49 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:14:49 MSK)" (scheduled at 2025-07-13 13:13:49.578496+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:14:49 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:15:49 MSK)" (scheduled at 2025-07-13 13:14:49.578496+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:15:49 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:16:49 MSK)" (scheduled at 2025-07-13 13:15:49.578496+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:16:49 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:17:49 MSK)" (scheduled at 2025-07-13 13:16:49.578496+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:17:49 MSK)" executed successfully
+INFO:aiogram.event:Update id=607674421 is handled. Duration 161 ms by bot id=7628846836
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @mariam_chat_bot id=7628846836 - 'mariam_chat_bot'
+INFO:aiogram.dispatcher:Polling stopped
+INFO:httpx:HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "check_events" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @mariam_chat_bot id=7628846836 - 'mariam_chat_bot'
+INFO:aiogram.event:Update id=607674422 is handled. Duration 321 ms by bot id=7628846836
+INFO:aiogram.event:Update id=607674423 is handled. Duration 119 ms by bot id=7628846836
+INFO:aiogram.event:Update id=607674424 is handled. Duration 108 ms by bot id=7628846836
+INFO:aiogram.event:Update id=607674425 is handled. Duration 172 ms by bot id=7628846836
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:19:43 MSK)" (scheduled at 2025-07-13 13:18:43.588732+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:19:43 MSK)" executed successfully
+INFO:aiogram.event:Update id=607674426 is handled. Duration 191 ms by bot id=7628846836
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:20:43 MSK)" (scheduled at 2025-07-13 13:19:43.588732+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:20:43 MSK)" executed successfully
+INFO:aiogram.event:Update id=607674427 is handled. Duration 142 ms by bot id=7628846836
+INFO:aiogram.event:Update id=607674428 is handled. Duration 121 ms by bot id=7628846836
+INFO:aiogram.event:Update id=607674429 is handled. Duration 126 ms by bot id=7628846836
+INFO:aiogram.event:Update id=607674430 is handled. Duration 123 ms by bot id=7628846836
+INFO:aiogram.event:Update id=607674431 is handled. Duration 443 ms by bot id=7628846836
+INFO:aiogram.event:Update id=607674432 is handled. Duration 119 ms by bot id=7628846836
+INFO:aiogram.event:Update id=607674433 is handled. Duration 401 ms by bot id=7628846836
+INFO:aiogram.event:Update id=607674434 is handled. Duration 145 ms by bot id=7628846836
+INFO:aiogram.event:Update id=607674435 is handled. Duration 252 ms by bot id=7628846836
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:21:43 MSK)" (scheduled at 2025-07-13 13:20:43.588732+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:21:43 MSK)" executed successfully
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @mariam_chat_bot id=7628846836 - 'mariam_chat_bot'
+INFO:aiogram.dispatcher:Polling stopped
+INFO:httpx:HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "check_events" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @mariam_chat_bot id=7628846836 - 'mariam_chat_bot'
+INFO:aiogram.event:Update id=607674436 is handled. Duration 441 ms by bot id=7628846836
+INFO:aiogram.event:Update id=607674437 is handled. Duration 119 ms by bot id=7628846836
+INFO:aiogram.event:Update id=607674438 is handled. Duration 143 ms by bot id=7628846836
+INFO:aiogram.event:Update id=607674439 is handled. Duration 133 ms by bot id=7628846836
+INFO:aiogram.event:Update id=607674440 is handled. Duration 146 ms by bot id=7628846836
+INFO:aiogram.event:Update id=607674441 is handled. Duration 198 ms by bot id=7628846836
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:23:53 MSK)" (scheduled at 2025-07-13 13:22:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:23:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:24:53 MSK)" (scheduled at 2025-07-13 13:23:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:24:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:25:53 MSK)" (scheduled at 2025-07-13 13:24:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:25:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:26:53 MSK)" (scheduled at 2025-07-13 13:25:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:26:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:27:53 MSK)" (scheduled at 2025-07-13 13:26:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:27:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:28:53 MSK)" (scheduled at 2025-07-13 13:27:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:28:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:29:53 MSK)" (scheduled at 2025-07-13 13:28:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:29:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:30:53 MSK)" (scheduled at 2025-07-13 13:29:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:30:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:31:53 MSK)" (scheduled at 2025-07-13 13:30:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:31:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:32:53 MSK)" (scheduled at 2025-07-13 13:31:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:32:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:33:53 MSK)" (scheduled at 2025-07-13 13:32:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:33:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:34:53 MSK)" (scheduled at 2025-07-13 13:33:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:34:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:35:53 MSK)" (scheduled at 2025-07-13 13:34:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:35:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:36:53 MSK)" (scheduled at 2025-07-13 13:35:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:36:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:37:53 MSK)" (scheduled at 2025-07-13 13:36:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:37:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:38:53 MSK)" (scheduled at 2025-07-13 13:37:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:38:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:39:53 MSK)" (scheduled at 2025-07-13 13:38:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:39:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:40:53 MSK)" (scheduled at 2025-07-13 13:39:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:40:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:41:53 MSK)" (scheduled at 2025-07-13 13:40:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:41:53 MSK)" executed successfully
+INFO:aiogram.event:Update id=607674442 is handled. Duration 181 ms by bot id=7628846836
+INFO:aiogram.event:Update id=607674443 is handled. Duration 144 ms by bot id=7628846836
+INFO:aiogram.event:Update id=607674444 is handled. Duration 121 ms by bot id=7628846836
+INFO:aiogram.event:Update id=607674445 is handled. Duration 148 ms by bot id=7628846836
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:42:53 MSK)" (scheduled at 2025-07-13 13:41:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:42:53 MSK)" executed successfully
+INFO:aiogram.event:Update id=607674446 is handled. Duration 114 ms by bot id=7628846836
+INFO:aiogram.event:Update id=607674447 is handled. Duration 180 ms by bot id=7628846836
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:43:53 MSK)" (scheduled at 2025-07-13 13:42:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:43:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:44:53 MSK)" (scheduled at 2025-07-13 13:43:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:44:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:45:53 MSK)" (scheduled at 2025-07-13 13:44:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:45:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:46:53 MSK)" (scheduled at 2025-07-13 13:45:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:46:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:47:53 MSK)" (scheduled at 2025-07-13 13:46:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:47:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:48:53 MSK)" (scheduled at 2025-07-13 13:47:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:48:53 MSK)" executed successfully
+WARNING:apscheduler.executors.default:Run time of job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 13:54:53 MSK)" was missed by 0:00:17.016633
+WARNING:apscheduler.executors.default:Run time of job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 14:21:53 MSK)" was missed by 0:00:28.231429
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+WARNING:aiogram.dispatcher:Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7628846836)
+WARNING:apscheduler.executors.default:Run time of job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 14:39:53 MSK)" was missed by 0:00:41.187889
+WARNING:apscheduler.executors.default:Run time of job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 14:48:53 MSK)" was missed by 0:00:04.285072
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+WARNING:aiogram.dispatcher:Sleep for 1.230584 seconds and try again... (tryings = 1, bot id = 7628846836)
+INFO:aiogram.dispatcher:Connection established (tryings = 2, bot id = 7628846836)
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 14:49:53 MSK)" (scheduled at 2025-07-13 14:48:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 14:49:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 14:50:53 MSK)" (scheduled at 2025-07-13 14:49:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 14:50:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 14:51:53 MSK)" (scheduled at 2025-07-13 14:50:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 14:51:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 14:52:53 MSK)" (scheduled at 2025-07-13 14:51:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 14:52:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 14:53:53 MSK)" (scheduled at 2025-07-13 14:52:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 14:53:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 14:54:53 MSK)" (scheduled at 2025-07-13 14:53:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 14:54:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 14:55:53 MSK)" (scheduled at 2025-07-13 14:54:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 14:55:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 14:56:53 MSK)" (scheduled at 2025-07-13 14:55:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 14:56:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 14:57:53 MSK)" (scheduled at 2025-07-13 14:56:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 14:57:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 14:58:53 MSK)" (scheduled at 2025-07-13 14:57:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 14:58:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 14:59:53 MSK)" (scheduled at 2025-07-13 14:58:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 14:59:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:00:53 MSK)" (scheduled at 2025-07-13 14:59:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:00:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:01:53 MSK)" (scheduled at 2025-07-13 15:00:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:01:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:02:53 MSK)" (scheduled at 2025-07-13 15:01:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:02:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:03:53 MSK)" (scheduled at 2025-07-13 15:02:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:03:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:04:53 MSK)" (scheduled at 2025-07-13 15:03:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:04:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:05:53 MSK)" (scheduled at 2025-07-13 15:04:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:05:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:06:53 MSK)" (scheduled at 2025-07-13 15:05:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:06:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:07:53 MSK)" (scheduled at 2025-07-13 15:06:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:07:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:08:53 MSK)" (scheduled at 2025-07-13 15:07:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:08:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:09:53 MSK)" (scheduled at 2025-07-13 15:08:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:09:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:10:53 MSK)" (scheduled at 2025-07-13 15:09:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:10:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:11:53 MSK)" (scheduled at 2025-07-13 15:10:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:11:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:12:53 MSK)" (scheduled at 2025-07-13 15:11:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:12:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:13:53 MSK)" (scheduled at 2025-07-13 15:12:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:13:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:14:53 MSK)" (scheduled at 2025-07-13 15:13:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:14:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:15:53 MSK)" (scheduled at 2025-07-13 15:14:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:15:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:16:53 MSK)" (scheduled at 2025-07-13 15:15:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:16:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:17:53 MSK)" (scheduled at 2025-07-13 15:16:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:17:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:18:53 MSK)" (scheduled at 2025-07-13 15:17:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:18:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:19:53 MSK)" (scheduled at 2025-07-13 15:18:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:19:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:20:53 MSK)" (scheduled at 2025-07-13 15:19:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:20:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:21:53 MSK)" (scheduled at 2025-07-13 15:20:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:21:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:22:53 MSK)" (scheduled at 2025-07-13 15:21:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:22:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:23:53 MSK)" (scheduled at 2025-07-13 15:22:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:23:53 MSK)" executed successfully
+INFO:apscheduler.executors.default:Running job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:24:53 MSK)" (scheduled at 2025-07-13 15:23:53.508031+03:00)
+INFO:apscheduler.executors.default:Job "check_events (trigger: interval[0:01:00], next run at: 2025-07-13 15:24:53 MSK)" executed successfully

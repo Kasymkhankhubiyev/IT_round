@@ -73,7 +73,7 @@ async def send_welcome(message: types.Message):
     )
     await message.reply(help_text, reply_markup=KEYBOARD)
     # check for events
-    await check_events()
+    # await check_events()
 
 
 @dp.message(Command(commands=["schedule"]))
@@ -88,7 +88,7 @@ async def schedule_info(message: types.Message):
     )
     await message.reply(info_text, reply_markup=KEYBOARD)
     # check for events
-    await check_events()
+    # await check_events()
 
 
 @dp.message(Command(commands=["today", "tomorrow", "week"]))
@@ -100,13 +100,35 @@ async def show_schedule(message: types.Message):
 
     match message.text[1:]:
         case "today":
-            schedule = get_schedule(str(start.weekday()))
+            schedule = get_schedule(
+                datetime.strftime(start, "%d.%m"), str(start.weekday())
+            )
+            if start.weekday() == 6:
+                schedule = "В воскресенье не учимся)\n"
 
         case "tomorrow":
-            schedule = get_schedule(str(start.weekday()))
+            schedule = get_schedule(
+                datetime.strftime(start, "%d.%m"), str(start.weekday())
+            )
+            if start.weekday() == 6:
+                schedule = "В воскресенье не учимся)\n"
 
         case "week":
-            schedule = None
+            schedule = []
+            while start < end:
+                if start.weekday() == 6:
+                    schedule.append(
+                        f"В воскресенье {datetime.strftime(start, "%d.%m")} не учимся)\n"
+                    )
+                else:
+                    schedule.append(
+                        get_schedule(
+                            datetime.strftime(start, "%d.%m"), str(start.weekday())
+                        )
+                    )
+                start += timedelta(days=1)
+
+            schedule = "\n".join(schedule)
 
     events = database.get_user_events(str(message.chat.id), start, end)
 
@@ -115,10 +137,15 @@ async def show_schedule(message: types.Message):
     if schedule:
         response += schedule
     if events:
-        response += f"\n События на {period.capitalize()}, today is {start.weekday()}"
+        response += f"\n События на {period.capitalize()}\n\n" + "\n".join(
+            [
+                f"\t{idx + 1}. {event.event_name} в {event.event_time}"
+                for idx, event in enumerate(events)
+            ]
+        )
     await message.reply(response)
     # check for events
-    await check_events()
+    # await check_events()
 
 
 @dp.message(Command(commands=["add"]))
@@ -142,7 +169,7 @@ async def add_event_start(message: types.Message):
             "Please provide event name and date\nExample: /add Meeting 2023-12-20 15:00"
         )
     # check for events
-    await check_events()
+    # await check_events()
 
 
 async def check_events():
@@ -157,7 +184,7 @@ async def check_events():
             minutes = int(time_left.total_seconds() // 60)
             await bot.send_message(
                 event.chat_id,
-                f"⏰ Reminder: {event.event_name} starts in {minutes} minutes at {event.event_date.time()}!",
+                f"⏰ Напоминание: {event.event_name} начнется через {minutes} минут в {event.event_date.time()}!",
             )
             database.set_event_state(event.event_id)
         except Exception as e:

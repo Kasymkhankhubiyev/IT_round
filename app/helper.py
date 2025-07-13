@@ -55,7 +55,7 @@ weekday_map = {
 }
 
 
-def get_schedule(day: str) -> str | None:
+def get_schedule(date, day: str) -> str | None:
     weekday = weekday_map.get(day)
     if weekday:
         text = "\n".join(
@@ -64,5 +64,5 @@ def get_schedule(day: str) -> str | None:
                 for idx, item in enumerate(schedule[day])
             ]
         )
-        return f"Расписание на {weekday}:\n\n" + text
+        return f"Расписание на {date} [{weekday}]:\n\n" + text + "\n"
     return None
